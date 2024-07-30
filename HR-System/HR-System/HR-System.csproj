@@ -12,6 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HR-System.Core\HR-System.Core.csproj" />
+    <ProjectReference Include="..\HR-System.EF\HR-System.EF.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Controllers\" />
   </ItemGroup>
 
