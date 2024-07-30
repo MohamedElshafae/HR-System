@@ -1,3 +1,5 @@
+
+using HR_System.Core.Models;
 using HR_System.EF;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add DbContext with MySQL
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddDbContext<HrSystemContext>(options =>
+builder.Services.AddDbContext<HrContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 

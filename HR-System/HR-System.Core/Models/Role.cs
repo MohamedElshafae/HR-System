@@ -3,13 +3,11 @@ using System.Collections.Generic;
 
 namespace HR_System.Core.Models;
 
-public partial class Job
+public partial class Role
 {
-    public int Id { get; set; }
+    public int RoleId { get; set; }
 
-    public string Name { get; set; } = null!;
-
-    public string? Description { get; set; }
+    public string RoleTitle { get; set; } = null!;
 
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 }
