@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace HR_System.Core.Models;
 
@@ -13,9 +14,7 @@ public partial class Attachment
 
     public int? EmployeeId { get; set; }
 
-    public int? AttachmentTypeId { get; set; }
-
-    public virtual AttachmentsType? AttachmentType { get; set; }
-
+    [Required]
+    public FileType FileType { get; set; }
     public virtual Employee? Employee { get; set; }
 }

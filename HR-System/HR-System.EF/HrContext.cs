@@ -18,8 +18,6 @@ public partial class HrContext : DbContext
 
     public virtual DbSet<Attachment> Attachments { get; set; }
 
-    public virtual DbSet<AttachmentsType> AttachmentsTypes { get; set; }
-
     public virtual DbSet<Department> Departments { get; set; }
 
     public virtual DbSet<Employee> Employees { get; set; }
@@ -28,47 +26,25 @@ public partial class HrContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseMySQL("Server=127.0.0.1;Port=33061;Database=hr;User=root;Password=TEData66934((");
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Attachment>(entity =>
         {
             entity.HasKey(e => e.AttachmentId).HasName("PRIMARY");
 
-            entity.HasIndex(e => e.AttachmentTypeId, "AttachmentTypeID");
 
             entity.HasIndex(e => e.EmployeeId, "EmployeeID");
 
             entity.Property(e => e.AttachmentId).HasColumnName("AttachmentID");
-            entity.Property(e => e.AttachmentTypeId).HasColumnName("AttachmentTypeID");
             entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
             entity.Property(e => e.FilePath).HasMaxLength(255);
             entity.Property(e => e.UploadedDate).HasColumnType("date");
 
-            entity.HasOne(d => d.AttachmentType).WithMany(p => p.Attachments)
-                .HasForeignKey(d => d.AttachmentTypeId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("Attachments_ibfk_2");
 
             entity.HasOne(d => d.Employee).WithMany(p => p.Attachments)
                 .HasForeignKey(d => d.EmployeeId)
                 .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("Attachments_ibfk_1");
-        });
-
-        modelBuilder.Entity<AttachmentsType>(entity =>
-        {
-            entity.HasKey(e => e.AttachmentTypeId).HasName("PRIMARY");
-
-            entity.ToTable("AttachmentsType");
-
-            entity.Property(e => e.AttachmentTypeId).HasColumnName("AttachmentTypeID");
-            entity.Property(e => e.TypeName)
-                .HasMaxLength(255)
-                .HasDefaultValueSql("'DefaultType'");
         });
 
         modelBuilder.Entity<Department>(entity =>
