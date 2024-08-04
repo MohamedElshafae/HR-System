@@ -5,7 +5,7 @@ namespace HR_System.Core.Models;
 
 public partial class Employee
 {
-    public int EmployeeId { get; set; }
+    public Guid Id { get; set; }
 
     public string FirstName { get; set; } = null!;
 
@@ -17,9 +17,9 @@ public partial class Employee
 
     public string? NationalId { get; set; }
 
-    public int? DepartmentId { get; set; }
+    public Guid? DepartmentId { get; set; }
 
-    public int? RoleId { get; set; }
+    public Guid? JobId { get; set; }
 
     public DateTime? HireDate { get; set; }
 
@@ -29,8 +29,9 @@ public partial class Employee
 
     public string? Address { get; set; }
 
-    public int? ManagerId { get; set; }
+    public Guid? ManagerId { get; set; }
 
+    public virtual AppUser? user { get; set; }
     public virtual ICollection<Attachment> Attachments { get; set; } = new List<Attachment>();
 
     public virtual Department? Department { get; set; }
@@ -39,7 +40,7 @@ public partial class Employee
 
     public virtual Employee? Manager { get; set; }
 
-    public virtual Role? Role { get; set; }
+    public virtual Job? Job { get; set; }
 
 
 }

@@ -5,7 +5,7 @@ namespace HR_System.Core.Models;
 
 public partial class Department
 {
-    public int DepartmentId { get; set; }
+    public Guid Id { get; set; }
 
     public string DepartmentName { get; set; } = null!;
 

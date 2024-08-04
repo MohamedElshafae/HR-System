@@ -124,3 +124,10 @@ D:\files\Origin Training\HR-System\HR-System\HR-System\obj\Debug\net8.0\refint\H
 D:\files\Origin Training\HR-System\HR-System\HR-System\obj\Debug\net8.0\HR-System.pdb
 D:\files\Origin Training\HR-System\HR-System\HR-System\obj\Debug\net8.0\HR-System.genruntimeconfig.cache
 D:\files\Origin Training\HR-System\HR-System\HR-System\obj\Debug\net8.0\ref\HR-System.dll
+D:\files\Origin Training\HR-System\HR-System\HR-System\obj\Debug\net8.0\HR-System.MvcApplicationPartsAssemblyInfo.cs
+D:\files\Origin Training\HR-System\HR-System\HR-System\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\files\Origin Training\HR-System\HR-System\HR-System\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\files\Origin Training\HR-System\HR-System\HR-System\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\files\Origin Training\HR-System\HR-System\HR-System\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\files\Origin Training\HR-System\HR-System\HR-System\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\files\Origin Training\HR-System\HR-System\HR-System\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

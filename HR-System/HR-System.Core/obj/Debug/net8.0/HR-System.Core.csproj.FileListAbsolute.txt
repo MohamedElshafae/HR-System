@@ -12,3 +12,4 @@ D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\ref
 D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.pdb
 D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.genruntimeconfig.cache
 D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\ref\HR-System.Core.dll
+D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.csproj.AssemblyReference.cache
