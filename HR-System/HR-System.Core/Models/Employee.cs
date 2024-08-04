@@ -41,5 +41,5 @@ public partial class Employee
 
     public virtual Role? Role { get; set; }
 
-    public virtual ICollection<User> Users { get; set; } = new List<User>();
+
 }

@@ -24,8 +24,6 @@ public partial class HrContext : DbContext
 
     public virtual DbSet<Role> Roles { get; set; }
 
-    public virtual DbSet<User> Users { get; set; }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Attachment>(entity =>
@@ -111,23 +109,6 @@ public partial class HrContext : DbContext
             entity.Property(e => e.RoleTitle).HasMaxLength(100);
         });
 
-        modelBuilder.Entity<User>(entity =>
-        {
-            entity.HasKey(e => e.UserName).HasName("PRIMARY");
-
-            entity.ToTable("User");
-
-            entity.HasIndex(e => e.EmployeeId, "EmployeeID");
-
-            entity.Property(e => e.UserName).HasMaxLength(100);
-            entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
-            entity.Property(e => e.Password).HasMaxLength(100);
-
-            entity.HasOne(d => d.Employee).WithMany(p => p.Users)
-                .HasForeignKey(d => d.EmployeeId)
-                .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("User_ibfk_1");
-        });
 
         OnModelCreatingPartial(modelBuilder);
     }

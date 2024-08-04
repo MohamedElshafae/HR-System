@@ -170,30 +170,6 @@ namespace HR_System.EF.Migrations
                     b.ToTable("Roles");
                 });
 
-            modelBuilder.Entity("HR_System.Core.Models.User", b =>
-                {
-                    b.Property<string>("UserName")
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<int?>("EmployeeId")
-                        .HasColumnType("int")
-                        .HasColumnName("EmployeeID");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.HasKey("UserName")
-                        .HasName("PRIMARY");
-
-                    b.HasIndex(new[] { "EmployeeId" }, "EmployeeID")
-                        .HasDatabaseName("EmployeeID1");
-
-                    b.ToTable("User", (string)null);
-                });
-
             modelBuilder.Entity("HR_System.Core.Models.Attachment", b =>
                 {
                     b.HasOne("HR_System.Core.Models.Employee", "Employee")
@@ -232,17 +208,6 @@ namespace HR_System.EF.Migrations
                     b.Navigation("Role");
                 });
 
-            modelBuilder.Entity("HR_System.Core.Models.User", b =>
-                {
-                    b.HasOne("HR_System.Core.Models.Employee", "Employee")
-                        .WithMany("Users")
-                        .HasForeignKey("EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .HasConstraintName("User_ibfk_1");
-
-                    b.Navigation("Employee");
-                });
-
             modelBuilder.Entity("HR_System.Core.Models.Department", b =>
                 {
                     b.Navigation("Employees");
@@ -253,8 +218,6 @@ namespace HR_System.EF.Migrations
                     b.Navigation("Attachments");
 
                     b.Navigation("InverseManager");
-
-                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("HR_System.Core.Models.Role", b =>

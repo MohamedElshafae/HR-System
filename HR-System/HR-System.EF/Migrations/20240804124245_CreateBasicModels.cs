@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace HR_System.EF.Migrations
 {
     /// <inheritdoc />
-    public partial class makeModels : Migration
+    public partial class CreateBasicModels : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -116,28 +116,6 @@ namespace HR_System.EF.Migrations
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
-            migrationBuilder.CreateTable(
-                name: "User",
-                columns: table => new
-                {
-                    UserName = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Password = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    EmployeeID = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PRIMARY", x => x.UserName);
-                    table.ForeignKey(
-                        name: "User_ibfk_1",
-                        column: x => x.EmployeeID,
-                        principalTable: "Employee",
-                        principalColumn: "EmployeeID",
-                        onDelete: ReferentialAction.Cascade);
-                })
-                .Annotation("MySql:CharSet", "utf8mb4");
-
             migrationBuilder.CreateIndex(
                 name: "EmployeeID",
                 table: "Attachments",
@@ -169,11 +147,6 @@ namespace HR_System.EF.Migrations
                 name: "RoleID",
                 table: "Employee",
                 column: "RoleID");
-
-            migrationBuilder.CreateIndex(
-                name: "EmployeeID1",
-                table: "User",
-                column: "EmployeeID");
         }
 
         /// <inheritdoc />
@@ -181,9 +154,6 @@ namespace HR_System.EF.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Attachments");
-
-            migrationBuilder.DropTable(
-                name: "User");
 
             migrationBuilder.DropTable(
                 name: "Employee");
