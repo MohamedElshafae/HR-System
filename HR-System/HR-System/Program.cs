@@ -1,8 +1,10 @@
 
+using HR_System.Core.Interfaces;
 using HR_System.Core.Models;
 using HR_System.Core.Services;
 using HR_System.Core.ServicesInterfaces;
 using HR_System.EF.Data;
+using HR_System.EF.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -43,9 +45,12 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+// Add Repositories
+builder.Services.AddScoped<IJobRepository, JobRepository>();
 
 // Add Services
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IJobService, JobService>();
 // Add services to the container.
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
