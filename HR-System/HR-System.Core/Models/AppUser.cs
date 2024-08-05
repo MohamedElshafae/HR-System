@@ -16,5 +16,7 @@ namespace HR_System.Core.Models
         [ForeignKey("Employee")]
         public Guid EmployeeId { get; set; }
         public Employee? Employee { get; set; }
+
+
     }
 }
