@@ -18,7 +18,7 @@ builder.Services.AddDbContext<HrContext>(options =>
 // Configure Identity
 builder.Services.AddIdentity<AppUser, IdentityRole>()
     .AddEntityFrameworkStores<HrContext>()
-    .AddDefaultTokenProviders();
+    .AddApiEndpoints();
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -41,5 +41,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapIdentityApi<AppUser>();
 
 app.Run();
