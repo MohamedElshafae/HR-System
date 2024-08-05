@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TzYKL5fhsU4=",
+  "dgSpecHash": "uzWGFDeJu5k=",
   "success": true,
-  "projectFilePath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj",
+  "projectFilePath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elshafae\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Elshafae\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.7\\microsoft.aspnetcore.authentication.jwtbearer.8.0.7.nupkg.sha512",
