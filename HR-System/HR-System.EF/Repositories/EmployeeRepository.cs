@@ -24,6 +24,11 @@ namespace HR_System.EF.Repositories
             return await _context.Employees
                                  .FirstOrDefaultAsync(e => e.Id == id);
         }
+        public async Task<Employee?> GetEmployeeByEmailAsync(string email)
+        {
+            return await _context.Employees
+                .FirstOrDefaultAsync(e => e.Email == email);
+        }
 
         public async Task<IEnumerable<Employee>> GetAllEmployeesAsync()
         {

@@ -10,6 +10,7 @@ namespace HR_System.Core.Interfaces
     public interface IEmployeeRepository
     {
         Task<Employee?> GetEmployeeByIdAsync(Guid id);
+        Task<Employee?> GetEmployeeByEmailAsync(string email);
         Task<IEnumerable<Employee>> GetAllEmployeesAsync();
         Task<IEnumerable<Employee>> GetEmployeesByDepartmentAsync(Guid departmentId);
         Task AddEmployeeAsync(Employee employee);
