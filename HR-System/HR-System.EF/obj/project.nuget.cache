@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fzJf+c3VUQM=",
+  "dgSpecHash": "mRW5rxqBFcw=",
   "success": true,
-  "projectFilePath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj",
+  "projectFilePath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elshafae\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Elshafae\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
