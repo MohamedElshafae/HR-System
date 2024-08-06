@@ -3836,23 +3836,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Elshafae\\.nuget\\packages\\": {},
+    "C:\\Users\\lenovo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj",
       "projectName": "HR-System.EF",
-      "projectPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj",
-      "packagesPath": "C:\\Users\\Elshafae\\.nuget\\packages\\",
-      "outputPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.EF\\obj\\",
+      "projectPath": "C:\\Users\\lenovo\\source\\repos\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj",
+      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lenovo\\source\\repos\\HR-System\\HR-System\\HR-System.EF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Elshafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3868,8 +3868,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj": {
-              "projectPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj"
+            "C:\\Users\\lenovo\\source\\repos\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj": {
+              "projectPath": "C:\\Users\\lenovo\\source\\repos\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj"
             }
           }
         }

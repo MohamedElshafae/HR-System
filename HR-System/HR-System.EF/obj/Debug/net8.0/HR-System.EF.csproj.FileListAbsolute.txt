@@ -16,3 +16,21 @@ D:\files\Origin Training\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\refin
 D:\files\Origin Training\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.pdb
 D:\files\Origin Training\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.genruntimeconfig.cache
 D:\files\Origin Training\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\ref\HR-System.EF.dll
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\bin\Debug\net8.0\HR-System.EF.deps.json
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\bin\Debug\net8.0\HR-System.EF.runtimeconfig.json
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\bin\Debug\net8.0\HR-System.EF.dll
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\bin\Debug\net8.0\HR-System.EF.pdb
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\bin\Debug\net8.0\HR-System.Core.dll
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\bin\Debug\net8.0\HR-System.Core.pdb
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.csproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.sourcelink.json
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-Syste.DFB2EEC8.Up2Date
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.dll
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\refint\HR-System.EF.dll
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.pdb
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\HR-System.EF.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.EF\obj\Debug\net8.0\ref\HR-System.EF.dll

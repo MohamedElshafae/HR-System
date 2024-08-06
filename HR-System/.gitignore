@@ -1,1 +1,49 @@
+# .NET Core / ASP.NET Core
 .vs
+bin/
+obj/
+out/
+*.dll
+*.exe
+*.pdb
+*.log
+*.user
+*.swp
+HR-System\HR-System.Core\bin
+HR-System\HR-System.Core\obj
+HR-System\HR-System.EF\bin
+HR-System\HR-System.EF\obj
+HR-System\HR-System\bin
+HR-System\HR-System\obj
+# ASP.NET Core
+*.db
+*.sqlite
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# Environment-specific files
+*.env
+
+# Configuration files
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+
+# NuGet Packages
+**/*.nupkg
+*.nuget
+
+# Logs
+*.log
+logs/

@@ -13,3 +13,18 @@ D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-
 D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.genruntimeconfig.cache
 D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\ref\HR-System.Core.dll
 D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.csproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\bin\Debug\net8.0\HR-System.Core.deps.json
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\bin\Debug\net8.0\HR-System.Core.runtimeconfig.json
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\bin\Debug\net8.0\HR-System.Core.dll
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\bin\Debug\net8.0\HR-System.Core.pdb
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.csproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.sourcelink.json
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.dll
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\refint\HR-System.Core.dll
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.pdb
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\ref\HR-System.Core.dll
