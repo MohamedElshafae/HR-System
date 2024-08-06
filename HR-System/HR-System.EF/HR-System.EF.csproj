@@ -27,8 +27,4 @@
     <ProjectReference Include="..\HR-System.Core\HR-System.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
