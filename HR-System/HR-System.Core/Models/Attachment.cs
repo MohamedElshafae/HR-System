@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HR_System.Core.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
