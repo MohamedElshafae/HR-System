@@ -13,3 +13,18 @@ D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-
 D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.genruntimeconfig.cache
 D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\ref\HR-System.Core.dll
 D:\files\Origin Training\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.csproj.AssemblyReference.cache
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\bin\Debug\net8.0\HR-System.Core.deps.json
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\bin\Debug\net8.0\HR-System.Core.runtimeconfig.json
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\bin\Debug\net8.0\HR-System.Core.dll
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\bin\Debug\net8.0\HR-System.Core.pdb
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.csproj.AssemblyReference.cache
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.AssemblyInfoInputs.cache
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.AssemblyInfo.cs
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.csproj.CoreCompileInputs.cache
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.sourcelink.json
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.dll
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\refint\HR-System.Core.dll
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.pdb
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\HR-System.Core.genruntimeconfig.cache
+D:\files\Origin Training\New folder\HR-System\HR-System\HR-System.Core\obj\Debug\net8.0\ref\HR-System.Core.dll

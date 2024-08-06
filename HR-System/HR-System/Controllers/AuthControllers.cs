@@ -1,5 +1,7 @@
 ﻿using HR_System.Core.DTOs;
 using HR_System.Core.Models;
+using HR_System.Core.ServicesInterfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,12 +15,24 @@ namespace HR_System.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly IAuthService _authService;
 
-        public AuthControllers(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        public AuthControllers(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IAuthService authService)
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _authService = authService;
         }
+
+
+        [HttpGet("secure-data")]
+        [Authorize]
+        public IActionResult GetSecureData()
+        {
+            return Ok("u got me");
+        }
+
+
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDTO registerDTO)
@@ -49,12 +63,15 @@ namespace HR_System.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var result = await _signInManager.PasswordSignInAsync(loginDTO.userName, loginDTO.Password, false, false);
-            if (!result.Succeeded)
-            {
-                return Unauthorized(new { Message = "Invalid login attempt" });
-            }
-            return Ok(new { Message = "user logged succesfully"});
+            var user = await _userManager.FindByNameAsync(loginDTO.userName);
+
+            if (user == null)
+                return Unauthorized(new { Message = "Invalid userName" });
+
+            if (!await _userManager.CheckPasswordAsync(user, loginDTO.Password))
+                return Unauthorized(new { Message = "Invalid Password" });
+            var token = await _authService.GenerateJwtToken(user);
+            return Ok(new { token });
         }
     }
 }
