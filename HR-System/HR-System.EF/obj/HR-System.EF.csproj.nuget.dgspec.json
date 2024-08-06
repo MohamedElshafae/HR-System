@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj": {}
+    "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj": {}
   },
   "projects": {
-    "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj": {
+    "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj",
+        "projectUniqueName": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj",
         "projectName": "HR-System.Core",
-        "projectPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj",
+        "projectPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj",
         "packagesPath": "C:\\Users\\Elshafae\\.nuget\\packages\\",
-        "outputPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.Core\\obj\\",
+        "outputPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -81,14 +81,14 @@
         }
       }
     },
-    "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj": {
+    "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj",
+        "projectUniqueName": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj",
         "projectName": "HR-System.EF",
-        "projectPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj",
+        "projectPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.EF\\HR-System.EF.csproj",
         "packagesPath": "C:\\Users\\Elshafae\\.nuget\\packages\\",
-        "outputPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.EF\\obj\\",
+        "outputPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -110,8 +110,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj": {
-                "projectPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj"
+              "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj": {
+                "projectPath": "D:\\files\\Origin Training\\HR-System\\HR-System\\HR-System\\HR-System.Core\\HR-System.Core.csproj"
               }
             }
           }
