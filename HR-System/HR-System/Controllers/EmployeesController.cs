@@ -15,10 +15,12 @@ namespace HR_System.Controllers
     public class EmployeesController : ControllerBase
     {
         private readonly EmployeeService _employeeService;
+        private readonly IEmployeeRepository _employeeRepository;
 
-        public EmployeesController(EmployeeService employeeService)
+        public EmployeesController(EmployeeService employeeService , IEmployeeRepository employeeRepository)
         {
             _employeeService = employeeService;
+            _employeeRepository = employeeRepository;
         }
 
 
@@ -60,6 +62,13 @@ namespace HR_System.Controllers
                 return BadRequest("Invalid employee data.");
             }
 
+            var existingEmployee = await _employeeRepository.GetEmployeeByEmailAsync(employee.Email);
+            if (existingEmployee != null)
+            {
+                return Conflict(new { Message = "this email already exists " });
+            }
+
+
             await _employeeService.AddEmployeeAsync(employee);
             return CreatedAtAction(nameof(GetEmployeeById), new { id = employee.Id }, employee);
 
@@ -80,8 +89,8 @@ namespace HR_System.Controllers
             existingEmployee.Email = employee.Email;
             existingEmployee.Phone = employee.Phone;
             existingEmployee.Attachments = employee.Attachments;
-            existingEmployee.Job = employee.Job;
-            existingEmployee.Department = employee.Department;
+            existingEmployee.JobId = employee.JobId;
+            existingEmployee.DepartmentId = employee.DepartmentId;
             existingEmployee.ManagerId = employee.ManagerId;
 
 
