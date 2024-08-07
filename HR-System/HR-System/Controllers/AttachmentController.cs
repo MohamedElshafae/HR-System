@@ -4,6 +4,7 @@ using HR_System.Core.DTOs;
 using HR_System.Core.Services;
 using System;
 using System.Threading.Tasks;
+using HR_System.Core.ServicesInterfaces;
 
 namespace HR_System.Controllers
 {
@@ -11,9 +12,9 @@ namespace HR_System.Controllers
     [ApiController]
     public class AttachmentsController : ControllerBase
     {
-        private readonly AttachmentService _attachmentService;
+        private readonly IAttachmentService _attachmentService;
 
-        public AttachmentsController(AttachmentService attachmentService)
+        public AttachmentsController(IAttachmentService attachmentService)
         {
             _attachmentService = attachmentService;
         }

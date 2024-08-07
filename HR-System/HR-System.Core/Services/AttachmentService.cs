@@ -20,16 +20,16 @@ namespace HR_System.Core.Services
             _attachmentRepository = attachmentRepository;
             _employeeRepository = employeeRepository;
         }
-        public async Task<AttachmentDtos> CreateAttachmentAsync(IFormFile file, FileType fileType, Guid empId)
+        public async Task<FileHandlerDtos> CreateAttachmentAsync(IFormFile file, FileType fileType, Guid empId)
         {
-            var attachmentDtos = await UploadFile(file, fileType, empId);
+            var fileHandlerDtos = await UploadFile(file, fileType, empId);
 
-            if (attachmentDtos.IsSuccess)
+            if (fileHandlerDtos.IsSuccess)
             {
                 Attachment attachment = new Attachment()
                 {
                     Id = Guid.NewGuid(),
-                    FilePath = attachmentDtos.filePath, 
+                    FilePath = fileHandlerDtos.filePath, 
                     EmployeeId = empId,
                     UploadedDate = DateTime.Now,
                     FileType = fileType,
@@ -38,35 +38,28 @@ namespace HR_System.Core.Services
                 _attachmentRepository.CreateAttachmentAsync(attachment);
             }
 
-            return attachmentDtos;
+            return fileHandlerDtos;
         }
 
-        private async Task<AttachmentDtos> UploadFile(IFormFile file, FileType fileType, Guid empId)
+        private async Task<FileHandlerDtos> UploadFile(IFormFile file, FileType fileType, Guid empId)
         {
-            AttachmentDtos attachmentDtos = new AttachmentDtos();
-            attachmentDtos.IsSuccess = false;
+            FileHandlerDtos fileHandlerDtos = new FileHandlerDtos();
+            fileHandlerDtos.IsSuccess = false;
 
             if (UploadHandlerService.IsBigger(file))
             {
-                attachmentDtos.Message = "The File is bigger than 5MB";
-                return attachmentDtos;
+                fileHandlerDtos.Message = "The File is bigger than 5MB";
+                return fileHandlerDtos;
             }
             var emp = await _employeeRepository.GetEmployeeByIdAsync(empId);
 
             if (emp == null)
             {
-                attachmentDtos.Message = "emp Not Found";
-                return attachmentDtos;
+                fileHandlerDtos.Message = "emp Not Found";
+                return fileHandlerDtos;
             }
-            var filePath = await UploadHandlerService.UploadFileAsync(file, emp.FirstName, emp.Id, fileType);
-            if (filePath == null)
-            {
-                attachmentDtos.Message = "The File did not upload";
-                return attachmentDtos;
-            }
-            attachmentDtos.IsSuccess = true;
-            attachmentDtos.filePath = filePath;
-            return attachmentDtos;
+            fileHandlerDtos = await UploadHandlerService.UploadFileAsync(file, emp.FirstName, emp.Id, fileType);
+            return fileHandlerDtos;
         }
     }
 }

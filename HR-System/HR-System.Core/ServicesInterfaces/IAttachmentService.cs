@@ -11,6 +11,6 @@ namespace HR_System.Core.ServicesInterfaces
 {
     public interface IAttachmentService
     {
-        Task<AttachmentDtos> CreateAttachmentAsync(IFormFile file, FileType fileType, Guid empId);
+        Task<FileHandlerDtos> CreateAttachmentAsync(IFormFile file, FileType fileType, Guid empId);
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HR_System.Core.DTOs
 {
-    public class AttachmentDtos
+    public class FileHandlerDtos
     {
         public bool IsSuccess { get; set; }
         public string Message { get; set; }
