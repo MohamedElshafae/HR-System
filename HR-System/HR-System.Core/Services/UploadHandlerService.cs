@@ -1,30 +1,24 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.Runtime.CompilerServices;
+
 namespace HR_System.Core.Services
 {
-    public enum FileType
-    {
-        CV,
-        Img,
-        txt,
-        PDF,
-        docx
-    }
     public static class UploadHandlerService
     {
-        public async static Task<bool> UploadFileAsync(IFormFile file, string empName, string empId, FileType fileType)
+        public async static Task<string> UploadFileAsync(IFormFile file, string empName, Guid empId, FileType fileType)
         {
-            string fileName = empName + "_" + empId + "_" + fileType + Path.GetExtension(file.FileName);
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Attachments", fileName);
+            string empDir = $"{empName}_{empId}";
+            string fileName = $"{empName}_{empId}_{fileType}{Path.GetExtension(file.FileName)}";
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Attachments", empDir, fileName);
 
             if (File.Exists(filePath))
-                return false;
+                return null;
             FileStream stream = new FileStream(filePath, FileMode.Create);
 
             await file.CopyToAsync(stream);
             stream.Dispose();
             stream.Close();
-            return true;
+            return filePath;
         }
         public static bool IsBigger(IFormFile file)
         {
@@ -34,5 +28,14 @@ namespace HR_System.Core.Services
                 return true;
             return false;
         }
+    }
+
+    public enum FileType
+    {
+        CV,
+        Img,
+        txt,
+        PDF,
+        docx
     }
 }
