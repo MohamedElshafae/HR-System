@@ -49,10 +49,15 @@ namespace HR_System.Controllers
                 EmployeeId = registerDTO.employeeId
             };
 
+            if (await _userManager.FindByEmailAsync(user.Email) != null)
+            {
+                return Conflict(new {Message = "The email is already Exits"} );
+            }
+
             var result = await _userManager.CreateAsync(user, registerDTO.Password);
             if (!result.Succeeded)
             {
-                return BadRequest(new { Message = "Error" });
+                return BadRequest(new { Message = result.Errors});
             }
             return Ok(new { Message = "User register succesfully" });
         }

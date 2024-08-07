@@ -22,6 +22,9 @@ namespace HR_System.Controllers
         [HttpPost("create_attachment")]
         public async Task<IActionResult> CreateAttachment(IFormFile file, FileType fileType, Guid empId)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             if (file == null || file.Length == 0)
             {
                 return BadRequest(new { Message = "No file uploaded " });
