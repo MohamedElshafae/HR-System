@@ -26,20 +26,28 @@ namespace HR_System.Controllers
                 return BadRequest(ModelState);
 
             if (file == null || file.Length == 0)
-            {
                 return BadRequest(new { Message = "No file uploaded " });
-            }
 
             var result = await _attachmentService.CreateAttachmentAsync(file, fileType, empId);
 
             if (result.IsSuccess)
-            {
                 return Ok(new { Message = "File uploaded successfully.", FilePath = result.filePath });
-            }
-            else
-            {
-                return BadRequest(new { Message = result.Message });
-            }
+
+            return BadRequest(new { Message = result.Message });
+        }
+
+        [HttpGet("attachment")]
+        public async Task<IActionResult> GetAttachment(string path)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            var fileDto = await FileHandlerService.downloadFile(path);
+
+            if (!fileDto.isSuccess)
+                return NotFound("fail");
+
+            return File(fileDto.bytes, "application/octet-stream", "download");
         }
     }
 }

@@ -1,10 +1,12 @@
 ﻿using HR_System.Core.DTOs;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.StaticFiles;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 
 namespace HR_System.Core.Services
 {
-    public static class UploadHandlerService
+    public static class FileHandlerService
     {
         public async static Task<FileHandlerDtos> UploadFileAsync(IFormFile file, string empName, Guid empId, FileType fileType)
         {
@@ -47,6 +49,29 @@ namespace HR_System.Core.Services
             if (size > MaxmumSize)
                 return true;
             return false;
+        }
+
+        public async static Task<FileDto> downloadFile(string path)
+        {
+            var fileDto = new FileDto()
+            {
+                isSuccess = false
+            };
+            var provider = new FileExtensionContentTypeProvider();
+
+            if (!File.Exists(path))
+                return fileDto;
+
+            var memory = new MemoryStream();
+            var contentType = provider.GetType();
+            var bytes = await File.ReadAllBytesAsync(path);
+
+            fileDto.isSuccess = true;
+            fileDto.bytes = bytes;
+            fileDto.contentType = contentType;
+            fileDto.path = path;
+
+            return fileDto;
         }
     }
 

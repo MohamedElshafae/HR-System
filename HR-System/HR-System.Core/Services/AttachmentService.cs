@@ -46,7 +46,7 @@ namespace HR_System.Core.Services
             FileHandlerDtos fileHandlerDtos = new FileHandlerDtos();
             fileHandlerDtos.IsSuccess = false;
 
-            if (UploadHandlerService.IsBigger(file))
+            if (FileHandlerService.IsBigger(file))
             {
                 fileHandlerDtos.Message = "The File is bigger than 5MB";
                 return fileHandlerDtos;
@@ -58,7 +58,7 @@ namespace HR_System.Core.Services
                 fileHandlerDtos.Message = "emp Not Found";
                 return fileHandlerDtos;
             }
-            fileHandlerDtos = await UploadHandlerService.UploadFileAsync(file, emp.FirstName, emp.Id, fileType);
+            fileHandlerDtos = await FileHandlerService.UploadFileAsync(file, emp.FirstName, emp.Id, fileType);
             return fileHandlerDtos;
         }
     }
