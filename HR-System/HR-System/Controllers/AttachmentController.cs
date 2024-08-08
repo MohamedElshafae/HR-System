@@ -47,7 +47,7 @@ namespace HR_System.Controllers
             if (!fileDto.isSuccess)
                 return NotFound("fail");
 
-            return File(fileDto.bytes, "application/octet-stream", "download");
+            return File(fileDto.bytes, fileDto.contentType, "download");
         }
     }
 }

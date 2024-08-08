@@ -9,7 +9,7 @@ namespace HR_System.Core.DTOs
     public class FileDto
     {
         public byte[] bytes { get; set; }
-        public Type contentType { get; set; }
+        public string contentType { get; set; }
         public string path { get; set; }
         public bool isSuccess {  get; set; }
     }

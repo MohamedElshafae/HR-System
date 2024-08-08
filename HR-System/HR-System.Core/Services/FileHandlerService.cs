@@ -62,25 +62,22 @@ namespace HR_System.Core.Services
             if (!File.Exists(path))
                 return fileDto;
 
-            var memory = new MemoryStream();
             var contentType = provider.GetType();
             var bytes = await File.ReadAllBytesAsync(path);
 
             fileDto.isSuccess = true;
             fileDto.bytes = bytes;
-            fileDto.contentType = contentType;
+            fileDto.contentType = "image/png";
             fileDto.path = path;
 
             return fileDto;
         }
     }
-
     public enum FileType
     {
         CV,
-        Img,
-        txt,
-        PDF,
-        docx
+        NationalID,
+        GraduationCertificate,
+        other
     }
 }
